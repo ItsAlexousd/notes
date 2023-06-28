@@ -1,23 +1,32 @@
+# Site setting
 title: CS Notes
-description: >- # this means to ignore newlines until "baseurl:"
-  Notes from learning computer science.
-baseurl: ""
-url: https://itsalexousd.github.io/
+description: Notes from learning computer science.
 
-markdown: kramdown
+# Remote setting
+baseurl: "/notes"
+url: "https://itsalexousd.github.io/"
+
+# Theme
 # theme: "just-the-docs"
 remote_theme: just-the-docs/just-the-docs
-plugins:
-  - jekyll/scholar
+
+# Theme settings
+# Color scheme currently only supports "dark" or nil (default)
+color_scheme: nil
+
+# Enable or disable the site search
+# Use this command to update index: bundle exec just-the-docs rake search:init
+search_enabled: true
 
 aux_links:
-  "view on GitHub":
+  "View on GitHub":
     - "//github.com/itsalexousd/notes"
+aux_links_new_tab: true
+
+markdown: kramdown
+plugins:
+  - jekyll/scholar
 
 scholar:
   style: _bibliography/custom
   source: _bibliography
-
-exclude:
-  - Gemfile
-  - Gemfile.lock
