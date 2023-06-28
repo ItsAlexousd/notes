@@ -1,31 +1,48 @@
 # Site setting
 title: CS Notes
 description: Notes from learning computer science.
+url: https://itsalexousd.github.io
+twitter_username: itsalexousd
+github_username: itsalexousd
+minimal_mistakes_skin: "default" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+search: true
 
-# Remote setting
-baseurl: "/notes"
-url: "https://itsalexousd.github.io/"
-
-# Theme
-# theme: "just-the-docs"
+# Build settings
 remote_theme: just-the-docs/just-the-docs
-
-# Theme settings
-# Color scheme currently only supports "dark" or nil (default)
-color_scheme: nil
-
-# Enable or disable the site search
-# Use this command to update index: bundle exec just-the-docs rake search:init
-search_enabled: true
+markdown: kramdown
 
 aux_links:
   "View on GitHub":
     - "//github.com/itsalexousd/notes"
 aux_links_new_tab: true
 
-markdown: kramdown
 plugins:
   - jekyll/scholar
+
+author:
+  name: "Alexis Dalle"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/itsalexousd"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/alexis-dalle/"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/itsalexousd"
+
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/itsalexousd"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/alexis-dalle/"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/itsalexousd"
 
 scholar:
   style: _bibliography/custom
